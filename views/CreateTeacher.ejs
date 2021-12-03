@@ -1,0 +1,18 @@
+<%- include('../initials/header') %>
+
+<div class="createTeacher">
+    <form action="/createteacher" method="post">
+<div class="line"><label for="name">Teacher Name</label><input type="text" name="name" required></div>
+<div class="line"><label for="qualification">Qualification</label><input type="text" name="qualification" required></div>
+<div class="line"><label for="experience"> Experience</label><input type="text" name="experience" required></div>
+<div class="line"><label for="contact">Contact</label><input type="text" name="contact" required></div>
+<div class="line"><input type="submit" class="btn" value="Add Teacher" > </div>
+    </form>
+<a href="/" class="back-btn">Return to home</a>
+
+</div>
+
+
+
+
+<%- include('../initials/footer') %>

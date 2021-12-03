@@ -1,0 +1,199 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body{
+    background: url('../public/school.png') ,linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+    background-blend-mode: lighten;
+}
+.container{
+  padding-bottom: 20px;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.home > a {
+  text-decoration: none;
+  margin: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 1px solid olive;
+  color: royalblue;
+  padding: 10px;
+  border-radius: 4px;
+}
+.home > a:hover {
+  background-color: royalblue;
+  color: rgb(255, 255, 255);
+  border: none;
+  transform: scale(1.1);
+}
+
+/* Classes.ejs */
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+.box-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.box {
+  width: 300px;
+
+  border-radius: 5px;
+  text-align: left;
+ margin: 10px 0;
+  background-color: rgb(188, 238, 188);
+  font-size: 18px;
+}
+.box > h2 {
+  text-align: center;
+  color: tomato;
+  border-bottom: 1px solid black;
+}
+.box p {
+  margin: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.box table {
+    border-collapse: collapse;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+.box table th,td {
+padding: 5px;
+}
+
+/* create class */
+.createclass form {
+  text-align: center;
+  margin: 100px;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px black;
+}
+.createclass form p {
+  margin: 20px;
+}
+.createclass label {
+  margin: 10px;
+  padding: 10px;
+}
+.createclass input {
+  padding: 10px;
+}
+.btn {
+  padding: 5px 10px;
+  background-color: rgb(174, 114, 231);
+  border-radius: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 15px;
+  color: white;
+  outline: none;
+  margin: 0 auto;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+.back-btn {
+  padding: 5px 10px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  color: rgb(255, 8, 0);
+  border: 1px solid red;
+  text-decoration: none;
+  margin: 20px;
+  margin-bottom: 30px !important;
+}
+.back-btn:hover {
+  background:red;
+  color: white;
+}
+
+/* create student*/
+
+ form {
+  margin: 80px;
+  padding: 20px;
+  background: transparent;
+  box-shadow: 1px 1px 5px 1px black;
+}
+.createStudent label {
+  width: 50%;
+  color: grey;
+  font-weight: bolder;
+}
+.line {
+  display: flex;
+  margin: 20px;
+}
+.line label {
+  text-align: center;
+  width: 40%;
+}
+.line select {
+  padding: 10px;
+}
+.line input {
+  padding: 5px;
+  outline: none;
+}
+/* create Teacher*/
+.createteacher label {
+    width: 50%;
+    color: grey;
+    font-weight: bolder;
+  }
+
+  /* students   */
+
+.students table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 100px auto;
+
+
+}
+.students table *{
+    padding: 8px;
+    text-align: center;
+    border: 2px solid grey;
+    text-transform: capitalize;
+}
+
+
+.success{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  margin-left:25%;
+
+  font-size: 35px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color:lawngreen;
+
+text-shadow:1px 1px 6px rgb(255, 8, 8);
+}
+.checkmark{
+  
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 40px;
+    width: 20px;
+    margin-left: 20px; 
+    border-bottom: 7px solid #78b13f;
+    border-right: 7px solid #78b13f;
+  
+}

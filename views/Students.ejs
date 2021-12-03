@@ -1,0 +1,23 @@
+<%-include('../initials/header')%>
+<div class="students">
+    <h1 class="title">Total Students</h1>
+<table border="1">
+  <tr>
+    <th> Student Name</th>
+    <th>Class</th>
+    <th>Teacher</th>
+    <th>Teacher Contact No</th>
+  </tr>
+  <%students.forEach(student=>{ %>
+  <tr>
+    <td><%=student.name%></td>
+    <td><%=student.class_id.class_name%></td>
+    <td><%=student.teacher_id.name%></td>
+    <td><%=student.teacher_id.contact%></td>
+  </tr>
+  <%})%>
+</table>
+<a href="/" class="back-btn">Return to home</a>
+
+</div>
+<%-include('../initials/footer')%>

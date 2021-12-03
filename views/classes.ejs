@@ -1,0 +1,39 @@
+<%-include('../initials/header') %>
+<h1 class="title">Class List </h1>
+<div class="box-container">
+<% classes.forEach(clas=>{ %>
+<div class="box">
+    <h2><%=clas.class_name%></h2>
+    <p>  <strong>Student Name with Enrolled Date:</strong>
+        <table border="1">
+            <tr>
+                <th>Student Name</th>
+                <th>Enrolled Date</th>
+            </tr>
+            <% if (clas.students.length!==0) {%>
+       <%clas.students.forEach(student=>{ %>
+        <tr>
+            <td><%=student.name%></td>
+            <td><%=new Date(student.enrollment_date).toLocaleDateString()%></td>
+        </tr>
+        <%})%>
+        <%} else{ %>
+        <tr>
+            <td>No students</td>
+            <td>--</td>
+        </tr>
+        <%}%>
+        </table>
+   </p> 
+    <p><strong>Teacher Name  :</strong><%= clas.class_teacher ?clas.class_teacher.name : "No Teacher Assigned" %></p>
+        <p> <strong>Teacher Experience  :</strong><%= clas.class_teacher ?clas.class_teacher.experience : "--" %></p>
+</div>
+<%})%>
+</div>
+<div>
+    <a href="/" class="back-btn">Return to home</a>
+
+</div>
+
+
+<%-include('../initials/footer') %>
